@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Team Barhop</h1>
+					<p class="hightlight">Observing Our Users</p>
+				</section>
+
+				<section>
+					<div class="fragment rect">Immerse</div>
+					<div class="fragment rect">Engage</div>
+					<div class="fragment rect">Observe</div>
+				</section>
+
+				<section>
+					<section>						
+						<h1>Immersion</h1>
+						<p class="hightlight">Trying things out ourselves</p>
+					</section>
+
+					<section>
+						<h2 class="hightlight">What we planned to do?</h2>
+						<ul>
+							<li class="fragment">Try to plan an outing for the group</li>
+							<li class="fragment">Take note of the difficulties we faced</li>
+						</ul>
+					</section>
+
+					<section>
+						<h1>Observations</h1>
+						<p class="hightlight">What did we find out?</p>
+					</section>
+
+					<section>
+						<h2>Critical Information Gets Buried</h2>
+						<p class="hightlight">Date and venues that were decided some time ago gets lost in the WhatsApp conversation thread</p>
+					</section>
+
+					<section>
+						<h2>Long Lag Time in Replies</h2>
+						<p class="hightlight">It is easy to ignore WhatsApp messages and you cannot tell if people saw the message</p>
+					</section>
+
+					<section>
+						<h2>No specific place chosen</h2>
+						<p class="hightlight">We just choose a general location and decide to "play by ear"</p>
+						<p class="fragment">
+							<small>Therefore, we ended up just choosing the restaurant with the smallest crowd</small>
+						</p>
+					</section>
+
+					<section>
+						<h2>Decision making process favours the "loudest" guy</h2>
+						<p class="hightlight">The quieter people in the group had his opinion drowned out</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Engage</h1>
+						<p class="hightlight">Asking our potential users for feedback</p>
+					</section>
+
+					<section>
+						<h1 class="hightlight">The Plan</h1>
+						<p>Go to Timbre and interview some of the groups there...</p>
+					</section>
+
+					<section data-background="images/timbre.jpg"></section>
+
+					<section>
+						<h2 class="hightlight">What Really Happened</h2>
+						<p>We came off as pretty dubious and got very bad response</p>
+					</section>
+
+					<section>
+						<p><em>A group that we approached while in the queue actually left...</em></p>
+					</section>
+
+					<section>
+						<h1>Plan B</h1>
+						<p class="hightlight">The Tourist Plan</p>
+					</section>
+
+					<section data-background="images/tourist.jpg"></section>
+
+					<section>
+						<h2>They don't always have a place in mind</h2>
+						<blockquote>"We dont always go to the same places. Most of the time we just choose a general location and then decide..."</blockquote>
+					</section>
+
+					<section>
+						<h2>Price is gauged on a per person level</h2>
+						<blockquote>"Being students, we have limited money to spend. We try to stick to a budget of around $30 - $40 per person."</blockquote>
+					</section>
+
+					<section>
+						<h2>They want to end their night at places with public transport</h2>
+						<blockquote>"If we are not going clubbing, we will try to make it in time for public transport..."</blockquote>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Observe</h1>
+						<p class="hightlight">Passive data collection</p>
+					</section>
+
+					<section>
+						<h1 class="hightlight">What did we do?</h1>
+						<p>We stalked <s>followed</s> people around to see where they head to after dinner.</p>
+					</section>
+
+					<section>
+						<h1>Observations</h1>
+						<ul>
+							<li class="fragment hightlight">People spend quite a lot of time wondering around looking for a place to chill</li>
+							<li class="fragment hightlight">Some actually gave up and left after a while</li>
+						</ul>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
